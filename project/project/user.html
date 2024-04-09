@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Inside Box</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .box {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 10px; /* Adjust as needed */
+  }
+  .line {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .line-number {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 100px; /* Adjust width as needed */
+  }
+  .line-content {
+    display: flex;
+    align-items: center;
+  }
+  .empty-box {
+    width: 100px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    margin-right: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 5px;
+    padding: 5px; /* Add padding to make it more clickable */
+  }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <div class="container">
+      <div class="line">
+          <div class="line-number">Name:</div>
+          <div class="line-content">
+              <!-- Empty box for "Center name" content -->
+              <div class="empty-box" contenteditable="true"></div>
+          </div>
+      </div>
+      <div class="line">
+          <div class="line-number">Doccument:</div>
+          <div class="line-content">
+              <!-- Button to the right of "Center phone" content -->
+              <div class="button">Upload</div>
+          </div>
+      </div>
+      <div class="line">
+          <div class="line-number">No.of prints:</div>
+          <div class="line-content">
+              <!-- Empty box for "Center email" content -->
+              <div class="empty-box" contenteditable="true"></div>
+          </div>
+      </div>
+      <div class="line">
+          <div class="line-number">Black& white:</div>
+          <div class="line-content">
+              <!-- Two buttons added to the right of "Center location" content -->
+              <div class="button">Y</div>
+              <div class="button">N</div>
+          </div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>

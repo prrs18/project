@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Inside Border</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            border: 2px solid black; /* Decreased border size */
+            padding: 10px; /* Adjust padding */
+        }
+
+        .container {
+            width: 400px; /* Adjust width as needed */
+        }
+
+        .horizontal-column {
+            width: 100%;
+            background-color: #af8cc5; /* Light purple background color */
+            display: flex;
+            justify-content: space-between; /* Align items at the ends */
+            align-items: center;
+            margin-bottom: 10px; /* Add space below */
+            padding: 0 20px; /* Add padding to the sides */
+        }
+
+        .button {
+            padding: 10px;
+            background-color: #007bff; /* Blue color */
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px; /* Adjust margin */
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue; /* Light blue background color for headers */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="horizontal-column">
+        <p>Jobs.</p>
+        <a href="printer.html" class="button">printer</a> <!-- Button linked to printer.html -->
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>SI.no</th>
+                <th>Documents</th>
+                <th>Pages</th>
+                <th>No.of copies</th>
+                <th>Estimated bill</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
